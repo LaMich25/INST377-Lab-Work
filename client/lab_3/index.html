@@ -3,3 +3,63 @@
     - The styles in this folder's `style.css`
     - The script in script.js, which should be included via a `<script src="script.js" >` call before your closing </body> tag 
 -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael's Labs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--wrapper-->
+        <header class="header">
+            <h1>Michael's Labs for INST377</h1>
+        </header>
+        <div class="container">
+            <!--container-->
+            <div class="left_section box">
+                <!--left inputs-->
+                <h2>Album Names</h2>
+                <ol class="box">
+                    <li>Gabriel -Keshi</li>
+                    <li>Love Poem - IU</li>
+                    <li>Sketchbook - taekmin</li>
+                    <li>Sun and Moon -Sam Kim</li>
+                    <li>Palette - IU</li>
+                </ol>
+            </div>
+            <div class="right_section box">
+                <!--right side-->
+                <h2>Image Carousel</h2>
+                <!--images box-->
+                <div class="carousel">
+                    <button class="prev">prev</button>
+                    <div class="slides">
+                        <div class="carousel_item visible"><img src="images/gabriel.jpg" alt="keshi"></div>
+                        <div class="carousel_item hidden"><img src="images/love_poem.jpg" alt="IU"></div>
+                        <div class="carousel_item hidden"><img src="images/sketchbook.jpg" alt="taekmin"></div>
+                        <div class="carousel_item hidden"><img src="images/sun_moon.jpg" alt="sam kim"></div>
+
+                    </div>
+                    <button class="next">next</button>
+                </div>
+                <div class="box">
+                    The following images show the different versions of the mochi images.
+                    From left to right, they are gif, jpg, png, and svg filetypes
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">LaMich25 <a href="https://github.com/LaMich25/INST377-Lab-Work" target="_blank"
+            rel="noopener noreferrer">Michael's
+            Github</a></footer>
+
+    <script src = "script.js"></script>
+</body>
+
+</html>
