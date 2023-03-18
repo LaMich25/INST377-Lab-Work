@@ -7,3 +7,51 @@
 
     Try placing it at the same level in your element tree as your Submit button
 -->
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael's Labs for INST377</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>Michael's INST377 Labs</h1>
+        </header>
+        <div class="container">
+            <div class="left_section box">
+                <h3>Form inputs</h3>
+                <form action="https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json" class="box main_form">
+                    <button type="button" id = "data_load">Load County Data</button>
+                    <label for="resto"></label>
+                    Restaurant Name
+                    <input type="text" id="resto" name="resto">
+
+                    <button type="button" id="filter_button">Filter</button>
+                    <button type="button" id = "generate">Generate List</button>
+                   
+                </form>
+            </div>
+            <div class="right_section box">
+                <h3>Local Restaurants</h3>
+                <ol class="restaurant_list box", id = "restaurant_list">
+                    A list of restaurants from an api
+                </ol>
+                <div class = "lds-ellipsis" id = "data_load_animation"><div></div><div></div><div></div></div>
+            </div>
+        </div>
+        <footer class="footer">LaMich25 <a href="https://github.com/LaMich25/INST377-Lab-Work" target="_blank"
+                rel="noopener noreferrer">Michael's
+                Github</a></footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
