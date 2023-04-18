@@ -188,6 +188,12 @@ form {
   And will be what displays in your client
 */
 
+#map{
+  width: 400px;
+  height: 380px;
+  margin-bottom: 1rem;
+}
+
 .box {
   background-color: rgba(239, 239, 239, 0.40);
   border: 2px dashed;
@@ -401,5 +407,6 @@ form label {
     align-items: flex-start;
   }
 
+  
 
 }
