@@ -50,7 +50,7 @@ async function mainEvent() { // the async keyword means we can make API requests
     const filterButton = document.querySelector('#filter_button');
     const loadDataButton = document.querySelector('#data_load');
     const generateListButton = document.querySelector('#generate');
-    const testField = document.querySelector('#resto');
+    const textField = document.querySelector('#resto');
 
     const loadAnimation = document.querySelector('#data_load_animation');
     loadAnimation.style.display = 'none';
@@ -134,13 +134,13 @@ async function mainEvent() { // the async keyword means we can make API requests
 
     generateListButton.addEventListener('click', (event) => {
         console.log('generate new list');
-        const currentList = cutRestaurantList(storedList);
+        currentList = cutRestaurantList(storedList);
         console.log(currentList);
         injectHTML(currentList);
     })
 
-    textField.addEventListener('input', (event) => {
-        console.log('input', event.target.value);
+    textField.addEventListener("input", (event) => {
+        console.log("input", event.target.value);
         const newList = filterList(currentList, event.target.value);
         console.log(newList);
         injectHTML(newList);
